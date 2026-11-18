@@ -1,12 +1,12 @@
 #include "media.hpp"
 #include <iostream> 
 
-Media::Media (int Id, std::string title) { 
+Media::Media (std::string Id, std::string title) { 
 this->Id = Id; 
 this->title = title; 
 } 
 
-int Media::getID () const { 
+std::string Media::getID () const { 
 return Id; 
 } 
 
@@ -15,8 +15,3 @@ return title;
 } 
 
 
-int main () { 
-
-
-return 0; 
-}

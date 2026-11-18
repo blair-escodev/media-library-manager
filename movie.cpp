@@ -1,7 +1,7 @@
 #include "movie.hpp"
 #include <iostream> 
 
-Movie::Movie (int Id, std::string title, int year, std::string director ) : Media (Id, title) { 
+Movie::Movie (std::string Id, std::string title, int year, std::string director ) : Media (Id, title) { 
 this->director = director; 
 this->year = year; 
 } 
@@ -15,6 +15,3 @@ std::cout<<"Year: " << getYear() << std::endl;
 
 
 
-int main () { 
-return 0;
-} 
